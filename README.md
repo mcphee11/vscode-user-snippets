@@ -29,3 +29,16 @@ This is the same concept as the Basic one above but also includes getting the co
 
 ## NOTE:
 When integration screens into things like the agent script and interactions widget or client Apps there are specific parameters you can pass to do with interactions into the URL. This makes it much easier to gather data about specific interactions and another reason why I use this method to pass in KVPs.
+
+## UPDATE
+I have cleaned this code up and after much internal debate I have chosen to go with a standard of single quotes for Strings: 'string' and not having a semicolin at the end of a line: ; . While this is a hot topic online this is my personal choice. I have also moved to use a more standardized formatter over the internal VSCode formatter [Prettier](https://prettier.io/)
+
+![](/docs/images/Extension.png?raw=true)
+
+I have the default settings other then these 3x options
+
+    Print Width: 200
+    Semi: false
+    Single Quote: true
+
+Some of the functions have also been cleaned up with newer Operators such as The Conditional Operator (?:) This has enabled more short hand code in parts. I have also cleaned up the console.log() parts to use CSS options to make it more visual. 
