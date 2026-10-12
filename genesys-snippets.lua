@@ -5,7 +5,7 @@
 vim.keymap.set("n", "<leader>gc1", function()
   local html_template = [[
 <!DOCTYPE html>
-<!-- Created as an example by https://github.com/mcphee11 Version 5.0 -->
+<!-- Created as an example by https://github.com/mcphee11 Version 5.1 -->
 <html>
   <head>
     <meta name="robots" content="noindex" />
@@ -14,13 +14,18 @@ vim.keymap.set("n", "<leader>gc1", function()
     <title></title>
     <meta name="Template" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Urbanist:wght@600;700&display=swap"
+    rel="stylesheet">
     <!-- Genesys CSS https://spark.genesys.com/ In PROD set a version https://www.jsdelivr.com/package/npm/genesys-spark-components -->
-    <link no-cors href="https://cdn.jsdelivr.net/npm/genesys-spark-components@latest/dist/genesys-webcomponents/genesys-webcomponents.min.css" rel="stylesheet" />
-    <script no-cors type="module" src="https://cdn.jsdelivr.net/npm/genesys-spark-components@latest/dist/genesys-webcomponents/genesys-webcomponents.esm.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/genesys-spark-components@4.268.0/dist/genesys-webcomponents/genesys-webcomponents.min.css" rel="stylesheet" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/genesys-spark-components@4.268.0/dist/genesys-webcomponents/genesys-webcomponents.esm.min.js"></script>
     <!-- Genesys SDK info https://mypurecloud.github.io/platform-client-sdk-javascript/  check for latest version -->
     <script src="https://sdk-cdn.mypurecloud.com/javascript/261.0.0/purecloud-platform-client-v2.min.js"></script>
   </head>
-  <body onload="start()">
+  <body>
     <script>
       'use strict' //Enables strict mode is JavaScript
       let url = new URL(document.location.href)
@@ -55,6 +60,7 @@ vim.keymap.set("n", "<leader>gc1", function()
           console.log('Error: ', err)
         }
       } //End of start() function
+      window.addEventListener('DOMContentLoaded', start)
     </script>
   </body>
 </html>
@@ -67,7 +73,7 @@ end, { desc = "Genesys Cloud Basic" })
 vim.keymap.set("n", "<leader>gc2", function()
   local html_template = [[
 <!DOCTYPE html>
-<!-- Created as an example by https://github.com/mcphee11 Version 5.0 -->
+<!-- Created as an example by https://github.com/mcphee11 Version 5.1 -->
 <html>
   <head>
     <meta name="robots" content="noindex" />
@@ -76,13 +82,18 @@ vim.keymap.set("n", "<leader>gc2", function()
     <title></title>
     <meta name="Template" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Urbanist:wght@600;700&display=swap"
+    rel="stylesheet">
     <!-- Genesys CSS https://spark.genesys.com/ In PROD set a version https://www.jsdelivr.com/package/npm/genesys-spark-components -->
-    <link no-cors href="https://cdn.jsdelivr.net/npm/genesys-spark-components@latest/dist/genesys-webcomponents/genesys-webcomponents.min.css" rel="stylesheet" />
-    <script no-cors type="module" src="https://cdn.jsdelivr.net/npm/genesys-spark-components@latest/dist/genesys-webcomponents/genesys-webcomponents.esm.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/genesys-spark-components@4.268.0/dist/genesys-webcomponents/genesys-webcomponents.min.css" rel="stylesheet" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/genesys-spark-components@4.268.0/dist/genesys-webcomponents/genesys-webcomponents.esm.min.js"></script>
     <!-- Genesys SDK info https://mypurecloud.github.io/platform-client-sdk-javascript/  check for latest version -->
     <script src="https://sdk-cdn.mypurecloud.com/javascript/261.0.0/purecloud-platform-client-v2.min.js"></script>
   </head>
-  <body onload="start()">
+  <body>
     <script>
       'use strict' //Enables strict mode is JavaScript
       let url = new URL(document.location.href)
@@ -186,6 +197,7 @@ vim.keymap.set("n", "<leader>gc2", function()
           }
           return true
         }
+      window.addEventListener('DOMContentLoaded', start)
     </script>
   </body>
 </html>
@@ -198,7 +210,7 @@ end, { desc = "Genesys Cloud Advanced" })
 vim.keymap.set("n", "<leader>gc3", function()
   local html_template = [[
 <!DOCTYPE html>
-<!-- Created as an example by https://github.com/mcphee11 Version 5.0 -->
+<!-- Created as an example by https://github.com/mcphee11 Version 5.1 -->
 <html>
   <head>
     <meta name="robots" content="noindex" />
@@ -207,14 +219,19 @@ vim.keymap.set("n", "<leader>gc3", function()
     <title></title>
     <meta name="Template" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Urbanist:wght@600;700&display=swap"
+    rel="stylesheet">
     <!-- Genesys CSS https://spark.genesys.com/ In PROD set a version https://www.jsdelivr.com/package/npm/genesys-spark-components -->
-    <link no-cors href="https://cdn.jsdelivr.net/npm/genesys-spark-components@latest/dist/genesys-webcomponents/genesys-webcomponents.min.css" rel="stylesheet" />
-    <script no-cors type="module" src="https://cdn.jsdelivr.net/npm/genesys-spark-components@latest/dist/genesys-webcomponents/genesys-webcomponents.esm.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/genesys-spark-components@4.268.0/dist/genesys-webcomponents/genesys-webcomponents.min.css" rel="stylesheet" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/genesys-spark-components@4.268.0/dist/genesys-webcomponents/genesys-webcomponents.esm.min.js"></script>
     <!-- Genesys SDK info https://mypurecloud.github.io/platform-client-sdk-javascript/  check for latest version -->
     <script src="https://sdk-cdn.mypurecloud.com/javascript/261.0.0/purecloud-platform-client-v2.min.js"></script>
     <script src="https://sdk-cdn.mypurecloud.com/client-apps/2.6.7/purecloud-client-app-sdk.js"></script>
   </head>
-  <body onload="start()">
+  <body>
     <div style="display: inline-flex">
       <gux-dropdown filter-type="starts-with" placeholder="UTC-00:00" id="timeZone" style="width: 150px; padding: 8px">
         <gux-listbox aria-label="Time Zone">
@@ -461,6 +478,7 @@ vim.keymap.set("n", "<leader>gc3", function()
         // ------------- EXAMPLE ------------------
         return conversations
       }
+      window.addEventListener('DOMContentLoaded', start)
     </script>
   </body>
 </html>
